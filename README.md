@@ -1,11 +1,12 @@
 # 滚动条
 
 ### 使用之时需加上这几个文件
-<link rel="stylesheet" href="styles/scrollBar.css">
 
+```
+<link rel="stylesheet" href="styles/scrollBar.css">
 <script src="scripts/jquery.js"></script>
-  
 <script src="scripts/scrollBar.js"></script>  
+```
 
 ```Html
 //html结构如下
