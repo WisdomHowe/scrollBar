@@ -1,6 +1,16 @@
 # 滚动条
 
 调用方法如下：
+```Html
+//html结构如下
+<div class="scroll-container scrollA">
+	<div class="scroll-wrapper">
+		...
+	</div>
+	<div class="scroll-bar"></div>
+</div>
+```
+
 ```JavaScript
 //纵向滚动条
 var scrollA = new Scroll(".scrollA", {
