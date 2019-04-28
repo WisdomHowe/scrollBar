@@ -1,0 +1,30 @@
+/* 滚动条样式 */
+.scroll-container{position: relative; overflow: hidden;}
+.scroll-container .scroll-wrapper{overflow: auto;}
+.scroll-container .scroll-bar{position: absolute;}
+.scroll-container .scroll-bar .scroll-bar-track{position: absolute; background: hotpink;}
+.scroll-container .scroll-bar .scroll-bar-thumb{position: absolute; background: yellowgreen; cursor: pointer;}
+.scroll-container .scroll-bar .scroll-bar-prev,
+.scroll-container .scroll-bar .scroll-bar-next{position: absolute; cursor: pointer; background: paleturquoise;}
+/* 垂直滚动条 */
+.scroll-container-vertical .scroll-wrapper{width: 100%; height: 100%; padding-right: 15px;}
+.scroll-container-vertical .scroll-bar{right: 0; top: 0; width: 15px; height: 100%;}
+.scroll-container-vertical .scroll-bar .scroll-bar-track{width: 100%;}
+.scroll-container-vertical .scroll-bar .scroll-bar-prev,
+.scroll-container-vertical .scroll-bar .scroll-bar-next{left: 0; width: 100%; height: 15px;}
+.scroll-container-vertical .scroll-bar .scroll-bar-prev{top: 0;}
+.scroll-container-vertical .scroll-bar .scroll-bar-next{bottom: 0;}
+.scroll-container-vertical .scroll-bar .scroll-bar-thumb{left: 0; top: 0; width: 100%;}
+/* 横向滚动条 */
+.scroll-container-horizontal .scroll-wrapper{width: auto; height: 100%; padding-bottom: 15px; white-space: nowrap;}
+.scroll-container-horizontal .scroll-bar{bottom: 0; left: 0; width: 100%; height: 15px;}
+.scroll-container-horizontal .scroll-bar .scroll-bar-track{height: 100%;}
+.scroll-container-horizontal .scroll-bar .scroll-bar-prev,
+.scroll-container-horizontal .scroll-bar .scroll-bar-next{top: 0; width: 15px; height: 100%;}
+.scroll-container-horizontal .scroll-bar .scroll-bar-prev{left: 0;}
+.scroll-container-horizontal .scroll-bar .scroll-bar-next{right: 0;}
+.scroll-container-horizontal .scroll-bar .scroll-bar-thumb{left: 0; bottom: 0; height: 100%;}
+
+.scrollA{margin: 30px; width: 300px; height: 300px;}
+.scrollB{margin: 30px; width: 600px; height: 230px;}
+.scrollB .scroll-bar{border-radius: 30px; overflow: hidden;}
