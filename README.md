@@ -1,11 +1,10 @@
 # 滚动条
 
-调用方法如下：
-
-使用之时需加上这几个文件
+### 使用之时需加上这几个文件
 <link rel="stylesheet" href="styles/scrollBar.css">  
 <script src="scripts/jquery.js"></script>  
 <script src="scripts/scrollBar.js"></script>  
+
 ```Html
 //html结构如下
 <div class="scroll-container scrollA">
@@ -19,10 +18,10 @@
 ```JavaScript
 //纵向滚动条
 var scrollA = new Scroll(".scrollA", {
->>barButton: true, //是否显示现实滚动条按钮， 默认false
->>callback: function(distance) {
->>>>console.log(distance)
->>}
+	barButton: true, //是否显示现实滚动条按钮， 默认false
+	callback: function(distance) {
+		console.log(distance)
+	}
 });
 //横向滚动条
 var scrollA = new Scroll(".scrollB", {
